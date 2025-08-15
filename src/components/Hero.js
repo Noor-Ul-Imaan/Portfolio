@@ -18,7 +18,7 @@ const Hero = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/noor-ul-imaan',
+      url: 'https://www.linkedin.com/in/noor-ul-imaan-waheed-879154243/',
       icon: FiLinkedin,
     },
     {
