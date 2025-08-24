@@ -81,7 +81,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Contact Form
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -167,12 +167,11 @@ const Contact = () => {
 
           {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8"
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="card">
+            <div className="card h-full">
               <h3 className="text-2xl font-bold text-secondary-forest mb-6">
                 Get in Touch
               </h3>
@@ -202,31 +201,38 @@ const Contact = () => {
                 ))}
               </div>
             </div>
+          </motion.div>
 
-            <div className="card bg-gradient-to-r from-primary-beige to-secondary-cream">
-              <h4 className="text-xl font-bold text-secondary-forest mb-4">
+          {/* What I Can Help With */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <div className="card h-full bg-gradient-to-r from-primary-beige to-secondary-cream">
+              <h3 className="text-2xl font-bold text-secondary-forest mb-6">
                 What I Can Help With
-              </h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-green rounded-full mr-3"></span>
-                  Web Application Development
+                  <span className="text-lg">Web Application Development</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-green rounded-full mr-3"></span>
-                  Mobile App Development
+                  <span className="text-lg">Mobile App Development</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-green rounded-full mr-3"></span>
-                  UI/UX Design & Prototyping
+                  <span className="text-lg">UI/UX Design & Prototyping</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-green rounded-full mr-3"></span>
-                  Technical Consultation
+                  <span className="text-lg">Technical Consultation</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-green rounded-full mr-3"></span>
-                  Project Collaboration
+                  <span className="text-lg">Project Collaboration</span>
                 </li>
               </ul>
             </div>
