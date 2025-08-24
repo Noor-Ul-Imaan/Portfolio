@@ -12,6 +12,7 @@ A modern, responsive personal portfolio website built with React, Tailwind CSS, 
 ## ✨ Features
 
 ### 🎯 Core Features
+
 - **Responsive Design**: Fully responsive across all devices
 - **Dark Mode Toggle**: Switch between light and dark themes
 - **Smooth Animations**: Framer Motion powered animations and transitions
@@ -19,6 +20,7 @@ A modern, responsive personal portfolio website built with React, Tailwind CSS, 
 - **SEO Optimized**: Proper meta tags and semantic HTML
 
 ### 📱 Sections
+
 1. **Hero Section**: Full-screen introduction with social links and call-to-action
 2. **About**: Personal information, education, and achievements
 3. **Experience**: Work history and internships with detailed descriptions
@@ -30,6 +32,7 @@ A modern, responsive personal portfolio website built with React, Tailwind CSS, 
 9. **Footer**: Social links and navigation
 
 ### 🛠 Technical Features
+
 - **React 18**: Latest React features and hooks
 - **Tailwind CSS**: Utility-first CSS framework
 - **Framer Motion**: Smooth animations and transitions
@@ -40,23 +43,27 @@ A modern, responsive personal portfolio website built with React, Tailwind CSS, 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (version 14 or higher)
 - npm or yarn package manager
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Noor-Ul-Imaan/portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -95,7 +102,9 @@ src/
 ## 🎨 Customization
 
 ### Colors
+
 Edit the color palette in `tailwind.config.js`:
+
 ```javascript
 colors: {
   primary: {
@@ -111,12 +120,14 @@ colors: {
 ```
 
 ### Content
+
 - Update personal information in each component
 - Replace project details in `Projects.js`
 - Modify experience details in `Experience.js`
 - Update contact information in `Contact.js`
 
 ### Styling
+
 - Global styles are in `src/index.css`
 - Component-specific styles use Tailwind classes
 - Custom animations are defined in `tailwind.config.js`
@@ -124,6 +135,7 @@ colors: {
 ## 📱 Responsive Design
 
 The portfolio is fully responsive with breakpoints:
+
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
@@ -131,6 +143,7 @@ The portfolio is fully responsive with breakpoints:
 ## 🌙 Dark Mode
 
 Dark mode is implemented with:
+
 - CSS custom properties for theme switching
 - Tailwind's dark mode classes
 - Smooth transitions between themes
@@ -139,17 +152,20 @@ Dark mode is implemented with:
 ## 🚀 Deployment
 
 ### Netlify
+
 1. Connect your GitHub repository to Netlify
 2. Set build command: `npm run build`
 3. Set publish directory: `build`
 4. Deploy!
 
 ### Vercel
+
 1. Install Vercel CLI: `npm i -g vercel`
 2. Run: `vercel`
 3. Follow the prompts
 
 ### GitHub Pages
+
 1. Add homepage to `package.json`: `"homepage": "https://username.github.io/repo-name"`
 2. Install gh-pages: `npm install --save-dev gh-pages`
 3. Add scripts to `package.json`:
@@ -170,9 +186,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📞 Contact
 
 - **Email**: noorulimaan47@gmail.com
-- **LinkedIn**: [linkedin.com/in/noor-ul-imaan](https://linkedin.com/in/noor-ul-imaan)
+- **LinkedIn**: [linkedin.com/in/noor-ul-imaan](https://www.linkedin.com/in/noor-ul-imaan-waheed-879154243/)
 - **GitHub**: [github.com/Noor-Ul-Imaan](https://github.com/Noor-Ul-Imaan)
 
 ---
 
-Made with ❤️ by Noor Ul Imaan 
+Made with ❤️ by Noor Ul Imaan

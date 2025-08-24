@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/noor-ul-imaan',
+      url: 'https://www.linkedin.com/in/noor-ul-imaan-waheed-879154243/',
       icon: FiLinkedin,
     },
     {
@@ -93,11 +93,11 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <p className="text-gray-300 text-sm">
-              © {currentYear} Noor Ul Imaan. All rights reserved.
+              © {currentYear} Noor Ul Imaan.
             </p>
 
             {/* Made with Love */}
-            <div className="flex items-center space-x-2 text-gray-300 text-sm">
+            {/* <div className="flex items-center space-x-2 text-gray-300 text-sm">
               <span>Made with</span>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
@@ -106,7 +106,7 @@ const Footer = () => {
                 <FiHeart className="w-4 h-4 text-red-400 fill-current" />
               </motion.div>
               <span>using React & Tailwind CSS</span>
-            </div>
+            </div> */}
 
             {/* Back to Top */}
             <motion.button

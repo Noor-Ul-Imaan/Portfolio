@@ -60,7 +60,7 @@ const Contact = () => {
       icon: FiLinkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/noor-ul-imaan",
-      link: "https://linkedin.com/in/noor-ul-imaan"
+      link: "https://www.linkedin.com/in/noor-ul-imaan-waheed-879154243/"
     }
   ];
 

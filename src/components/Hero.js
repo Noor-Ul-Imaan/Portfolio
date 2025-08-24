@@ -140,21 +140,23 @@ const Hero = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-2 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.button
-            onClick={() => scrollToSection('#about')}
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="p-2 text-primary-green dark:text-primary-beige hover:text-secondary-forest dark:hover:text-white transition-colors duration-300"
-          >
-            <FiArrowDown className="w-6 h-6" />
-          </motion.button>
-        </motion.div>
+{/* Scroll Indicator */}
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1.5 }}
+  className="flex justify-center mt-8"
+>
+  <motion.button
+    onClick={() => scrollToSection('#about')}
+    animate={{ y: [0, 10, 0] }}
+    transition={{ duration: 2, repeat: Infinity }}
+    className="p-2 text-primary-green dark:text-primary-beige hover:text-secondary-forest dark:hover:text-white transition-colors duration-300"
+  >
+    <FiArrowDown className="w-6 h-6" />
+  </motion.button>
+</motion.div>
+
       </div>
     </section>
   );

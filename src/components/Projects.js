@@ -19,7 +19,7 @@ const Projects = () => {
         "Indoor navigation using Wi-Fi fingerprinting"
       ],
       technologies: ["React Native", "Arduino", "Figma", "Tailwind CSS", "Appwrite"],
-      github: "https://github.com/Noor-Ul-Imaan/NavigateSolo",
+      github: "https://github.com/laibashakil/NavigateSolo",
       demo: null,
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
         "Responsive design for all devices"
       ],
       technologies: ["MongoDB", "Express.js", "ReactJS", "Node.js", "Authentication"],
-      github: "https://github.com/Noor-Ul-Imaan/Taskify",
+      github: "https://github.com/Noor-Ul-Imaan/Taskify-App",
       demo: null,
     },
     {
@@ -43,8 +43,8 @@ const Projects = () => {
         "Responsive web design"
       ],
       technologies: ["ReactJS", "External APIs", "Responsive Design", "State Management"],
-      github: "https://github.com/Noor-Ul-Imaan/MovieWebsite",
-      demo: null,
+      github: "https://github.com/Noor-Ul-Imaan/Movie-Website",
+      demo: "https://movie-website-ashy-iota.vercel.app/",
     },
     {
       title: "Hostel Management System",
@@ -55,7 +55,7 @@ const Projects = () => {
         "Advanced OOP implementation"
       ],
       technologies: ["C++", "OOP", "Data Structures", "File I/O"],
-      github: "https://github.com/Noor-Ul-Imaan/HostelManagement",
+      github: "https://github.com/Noor-Ul-Imaan/Hostel-Management-System",
       demo: null,
     }
   ];
