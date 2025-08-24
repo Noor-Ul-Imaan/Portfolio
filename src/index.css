@@ -72,11 +72,93 @@
 
 /* Dark mode styles */
 .dark {
-  background-color: #1a1a1a;
+  background-color: #2E4A35;
   color: #F5F0E1;
 }
 
 .dark .card {
-  background-color: #2d2d2d;
+  background-color: #1a2e1f;
   color: #F5F0E1;
+}
+
+.dark .bg-secondary-cream {
+  background-color: #1a2e1f;
+}
+
+.dark .bg-primary-beige {
+  background-color: #1a2e1f;
+}
+
+.dark .bg-white {
+  background-color: #1a2e1f;
+}
+
+.dark .bg-gray-50 {
+  background-color: #2E4A35;
+}
+
+.dark .bg-gray-800 {
+  background-color: #1a2e1f;
+}
+
+.dark .bg-gray-900 {
+  background-color: #2E4A35;
+}
+
+.dark .text-gray-600 {
+  color: #CBBF9D;
+}
+
+.dark .text-gray-300 {
+  color: #F5F0E1;
+}
+
+.dark .text-gray-500 {
+  color: #CBBF9D;
+}
+
+.dark .text-gray-400 {
+  color: #CBBF9D;
+}
+
+.dark .border-gray-300 {
+  border-color: #4F6F52;
+}
+
+.dark .border-gray-600 {
+  border-color: #4F6F52;
+}
+
+.dark .border-gray-700 {
+  border-color: #4F6F52;
+}
+
+/* Keep green elements unchanged in dark mode */
+.dark .bg-primary-green {
+  background-color: #4F6F52;
+}
+
+.dark .bg-secondary-forest {
+  background-color: #2E4A35;
+}
+
+.dark .text-primary-green {
+  color: #4F6F52;
+}
+
+.dark .text-secondary-forest {
+  color: #2E4A35;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1a2e1f;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4F6F52;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #2E4A35;
 } 

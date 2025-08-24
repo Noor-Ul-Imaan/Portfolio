@@ -29,7 +29,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary-cream to-primary-beige relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary-cream to-primary-beige dark:from-secondary-forest dark:to-primary-green relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 border border-primary-green rounded-full"></div>
@@ -50,7 +50,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-primary-green font-medium"
+            className="text-lg text-primary-green dark:text-primary-beige font-medium"
           >
             Hello, I'm
           </motion.p>
@@ -60,7 +60,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-5xl md:text-7xl font-bold text-secondary-forest"
+            className="text-5xl md:text-7xl font-bold text-secondary-forest dark:text-primary-beige"
           >
             Noor Ul Imaan
           </motion.h1>
@@ -70,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-2xl md:text-3xl text-primary-green font-medium"
+            className="text-2xl md:text-3xl text-primary-green dark:text-primary-beige font-medium"
           >
             Software Developer
           </motion.h2>
@@ -80,7 +80,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-600 dark:text-primary-beige max-w-2xl mx-auto leading-relaxed"
           >
             Passionate about creating innovative solutions and building user-centric applications 
             that make a difference in people's lives.
@@ -101,7 +101,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-primary-green hover:text-secondary-forest"
+                className="p-3 bg-white dark:bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-primary-green hover:text-secondary-forest"
               >
                 <social.icon className="w-6 h-6" />
               </motion.a>
@@ -121,7 +121,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary flex items-center space-x-2"
+              className="bg-primary-green text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary-forest transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2"
             >
               <span>Download CV</span>
               <FiDownload className="w-5 h-5" />
@@ -131,7 +131,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('#contact')}
-              className="btn-secondary flex items-center space-x-2"
+              className="bg-transparent border-2 border-primary-green dark:border-primary-beige text-primary-green dark:text-primary-beige px-6 py-3 rounded-lg font-medium hover:bg-primary-green hover:text-white dark:hover:bg-primary-beige dark:hover:text-secondary-forest transition-all duration-300 flex items-center space-x-2"
             >
               <span>Contact Me</span>
               <FiMail className="w-5 h-5" />
@@ -150,7 +150,7 @@ const Hero = () => {
             onClick={() => scrollToSection('#about')}
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="p-2 text-primary-green hover:text-secondary-forest transition-colors duration-300"
+            className="p-2 text-primary-green dark:text-primary-beige hover:text-secondary-forest dark:hover:text-white transition-colors duration-300"
           >
             <FiArrowDown className="w-6 h-6" />
           </motion.button>

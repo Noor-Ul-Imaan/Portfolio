@@ -39,6 +39,14 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
         }
+      },
+      backgroundColor: {
+        'dark-green': '#1a2e1f',
+        'dark-forest': '#2E4A35',
+      },
+      textColor: {
+        'dark-beige': '#F5F0E1',
+        'dark-brown': '#CBBF9D',
       }
     },
   },
