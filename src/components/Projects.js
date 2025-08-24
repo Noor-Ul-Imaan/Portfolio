@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiGithub, FiExternalLink, FiCode, FiUsers, FiTrendingUp } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -12,65 +12,51 @@ const Projects = () => {
   const projects = [
     {
       title: "NavigateSolo",
-      description: "Assistive Technology System using React Native, Arduino, and Indoor Navigation Algorithms",
-      longDescription: [
-        "Developed a cross-platform assistive technology system for enhancing the mobility and safety of visually impaired individuals",
-        "Contributed to the development of a mobile app using React Native (Expo), integrated with Arduino-powered smart cane",
-        "Collaborated on indoor navigation using Wi-Fi fingerprinting and on GPS/GSM module integration for real-time location tracking",
-        "Designed accessible UI/UX prototypes in Figma and implemented them using Tailwind CSS while used Appwrite for authentication and backend services",
-        "Practiced version control and collaboration through GitHub, conducting regular deployments and real-world testing"
+      description: "Assistive technology system for visually impaired individuals using React Native and Arduino",
+      keyFeatures: [
+        "Cross-platform mobile app with React Native",
+        "Arduino-powered smart cane integration",
+        "Indoor navigation using Wi-Fi fingerprinting"
       ],
-      technologies: ["React Native", "Arduino", "Figma", "Tailwind CSS", "Appwrite", "GitHub"],
-      impact: "Enhanced mobility and safety for visually impaired individuals",
-      category: "Assistive Technology",
+      technologies: ["React Native", "Arduino", "Figma", "Tailwind CSS", "Appwrite"],
       github: "https://github.com/Noor-Ul-Imaan/NavigateSolo",
-      live: null,
-      image: "navigatesolo"
+      demo: null,
     },
     {
       title: "Taskify",
-      description: "Management System using MERN Stack",
-      longDescription: [
-        "Developed a task management system for organizations using the MERN stack (MongoDB, Express.js, ReactJS, Node.js), incorporating necessary security practices to ensure data privacy and user authentication",
-        "Designed and implemented features for user sign-up/sign-in, task assignment, task submission, and employee reporting, facilitating efficient task tracking and collaboration within organizations",
-        "Created a responsive and user-friendly front-end with ReactJS, improving the overall usability across devices and screen sizes"
+      description: "Comprehensive task management system for organizations using MERN stack",
+      keyFeatures: [
+        "User authentication and task assignment",
+        "Real-time task tracking and reporting",
+        "Responsive design for all devices"
       ],
-      technologies: ["MongoDB", "Express.js", "ReactJS", "Node.js", "Authentication", "Responsive Design"],
-      impact: "Improved task tracking efficiency by 40%",
-      category: "Web Application",
+      technologies: ["MongoDB", "Express.js", "ReactJS", "Node.js", "Authentication"],
       github: "https://github.com/Noor-Ul-Imaan/Taskify",
-      live: null,
-      image: "taskify"
+      demo: null,
     },
     {
       title: "Movie Website",
-      description: "Website Development using ReactJS",
-      longDescription: [
-        "Developed a website using ReactJS, with state and event handling to ensure dynamic user interactions and seamless functionality",
-        "Integrated external APIs to fetch and display relevant data, enhancing the website's functionality and user experience",
-        "Implemented responsive web design techniques for optimal display across various devices and screen sizes"
+      description: "Dynamic movie browsing website with external API integration",
+      keyFeatures: [
+        "External API integration for movie data",
+        "Dynamic state management",
+        "Responsive web design"
       ],
       technologies: ["ReactJS", "External APIs", "Responsive Design", "State Management"],
-      impact: "Enhanced user experience with dynamic interactions",
-      category: "Web Application",
       github: "https://github.com/Noor-Ul-Imaan/MovieWebsite",
-      live: null,
-      image: "movie"
+      demo: null,
     },
     {
       title: "Hostel Management System",
-      description: "C++ with object-oriented programming (OOP) principles",
-      longDescription: [
-        "Collaborated with a team of developers to designed and implemented a Hostel Management System using C++",
-        "Applied advanced OOP concepts to develop efficient and scalable code and to manage various functionalities of the system",
-        "Added features for student registration, room allocation, and service tracking, showcasing application of real-world OOP concepts"
+      description: "Desktop application for hostel operations using C++ and OOP principles",
+      keyFeatures: [
+        "Student registration and room allocation",
+        "Service tracking and management",
+        "Advanced OOP implementation"
       ],
       technologies: ["C++", "OOP", "Data Structures", "File I/O"],
-      impact: "Streamlined hostel operations with automated management",
-      category: "Desktop Application",
       github: "https://github.com/Noor-Ul-Imaan/HostelManagement",
-      live: null,
-      image: "hostel"
+      demo: null,
     }
   ];
 
@@ -107,60 +93,20 @@ const Projects = () => {
                     <h3 className="text-2xl font-bold text-secondary-forest group-hover:text-primary-green transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-primary-green font-medium mt-1">
-                      {project.category}
+                    <p className="text-gray-600 dark:text-gray-300 mt-2 leading-relaxed">
+                      {project.description}
                     </p>
                   </div>
-                  <div className="flex space-x-2">
-                    {project.github && (
-                      <motion.a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-2 bg-primary-beige rounded-lg text-primary-green hover:bg-primary-green hover:text-white transition-all duration-300"
-                      >
-                        <FiGithub className="w-5 h-5" />
-                      </motion.a>
-                    )}
-                    {project.live && (
-                      <motion.a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-2 bg-primary-beige rounded-lg text-primary-green hover:bg-primary-green hover:text-white transition-all duration-300"
-                      >
-                        <FiExternalLink className="w-5 h-5" />
-                      </motion.a>
-                    )}
-                  </div>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  {project.description}
-                </p>
-
-                {/* Impact Metric */}
-                <div className="flex items-center space-x-2 text-sm">
-                  <FiTrendingUp className="w-4 h-4 text-primary-green" />
-                  <span className="text-primary-green font-medium">
-                    {project.impact}
-                  </span>
-                </div>
-              </div>
-
-              {/* Project Details */}
-              <div className="mt-6 space-y-4">
+                {/* Key Features */}
                 <div>
                   <h4 className="font-semibold text-secondary-forest mb-2 flex items-center">
                     <FiCode className="w-4 h-4 mr-2 text-primary-green" />
                     Key Features:
                   </h4>
                   <ul className="space-y-1">
-                    {project.longDescription.map((feature, featureIndex) => (
+                    {project.keyFeatures.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start text-sm">
                         <span className="w-1.5 h-1.5 bg-primary-green rounded-full mt-2 mr-2 flex-shrink-0"></span>
                         <span className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -171,9 +117,9 @@ const Projects = () => {
                   </ul>
                 </div>
 
+                {/* Technologies */}
                 <div>
-                  <h4 className="font-semibold text-secondary-forest mb-2 flex items-center">
-                    <FiUsers className="w-4 h-4 mr-2 text-primary-green" />
+                  <h4 className="font-semibold text-secondary-forest mb-2">
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -186,6 +132,45 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex gap-3 pt-4">
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-green text-white rounded-lg hover:bg-secondary-forest transition-all duration-300"
+                  >
+                    <FiGithub className="w-4 h-4" />
+                    <span>Code</span>
+                  </motion.a>
+                  
+                  {project.demo && (
+                    <motion.a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center space-x-2 px-4 py-2 bg-secondary-cream text-primary-green border border-primary-green rounded-lg hover:bg-primary-green hover:text-white transition-all duration-300"
+                    >
+                      <FiExternalLink className="w-4 h-4" />
+                      <span>Demo</span>
+                    </motion.a>
+                  )}
+                  
+                  {!project.demo && (
+                    <motion.button
+                      disabled
+                      className="inline-flex items-center space-x-2 px-4 py-2 bg-secondary-cream text-primary-green border border-primary-green rounded-lg opacity-50 cursor-not-allowed"
+                    >
+                      <FiExternalLink className="w-4 h-4" />
+                      <span>Demo</span>
+                    </motion.button>
+                  )}
                 </div>
               </div>
             </motion.div>

@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
 import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -30,7 +29,6 @@ function App() {
         <About />
         <Experience />
         <Projects />
-        <Skills />
         <Process />
         {/* <Testimonials /> */}
         <Contact />

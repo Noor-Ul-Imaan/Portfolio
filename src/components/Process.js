@@ -70,7 +70,7 @@ const Process = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">How I Work</h2>
+          <h2 className="section-title">My Process</h2>
           <div className="decorative-line"></div>
           <p className="section-subtitle">
             A systematic approach to delivering high-quality software solutions that meet your needs.
@@ -129,21 +129,21 @@ const Process = () => {
           ))}
         </div>
 
-        {/* Process Summary */}
+        {/* Continuous Learning Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.0 }}
           className="mt-16 text-center"
         >
-          <div className="card bg-gradient-to-r from-primary-beige to-secondary-cream">
-            <h3 className="text-2xl font-bold text-secondary-forest mb-4">
-              Why This Process Works
+          <div className="card bg-gradient-to-r from-primary-green to-secondary-forest text-white">
+            <h3 className="text-2xl font-bold mb-4">
+              Continuous Learning & Growth
             </h3>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              This systematic approach ensures that every project is delivered on time, within budget, 
-              and exceeds expectations. By following these proven steps, I can guarantee a smooth 
-              development process and a high-quality final product that meets your specific needs.
+            <p className="text-lg opacity-90 max-w-3xl mx-auto">
+              I believe in staying current with the latest technologies and best practices. 
+              My commitment to continuous learning ensures I can deliver cutting-edge solutions 
+              that meet modern development standards and user expectations.
             </p>
           </div>
         </motion.div>

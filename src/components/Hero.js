@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiArrowRight, FiArrowDown } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiArrowRight, FiArrowDown, FiDownload } from 'react-icons/fi';
 
 const Hero = () => {
   const scrollToSection = (href) => {
@@ -115,15 +115,17 @@ const Hero = () => {
             transition={{ delay: 1.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/file/d/1hgyvJyJdvfXDPIjOTLlAL85AEQT7prwY/view"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('#projects')}
               className="btn-primary flex items-center space-x-2"
             >
-              <span>View My Work</span>
-              <FiArrowRight className="w-5 h-5" />
-            </motion.button>
+              <span>Download CV</span>
+              <FiDownload className="w-5 h-5" />
+            </motion.a>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -142,7 +144,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2"
         >
           <motion.button
             onClick={() => scrollToSection('#about')}
